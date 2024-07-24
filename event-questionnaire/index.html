@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベントアンケート</title>
+</head>
+<body>
+    <h2>イベントアンケート</h2>
+    <form>
+        <label for="event_name">イベント名:</label><br>
+        <input type="text" id="event_name" name="event_name"><br>
+
+        <label for="attendee_name">参加者氏名:</label><br>
+        <input type="text" id="attendee_name" name="attendee_name"><br>
+
+        <label for="email">メールアドレス:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="rating">イベント評価:</label><br>
+        <select id="rating" name="rating">
+            <option value="excellent">非常に良い</option>
+            <option value="good">良い</option>
+            <option value="average">普通</option>
+            <option value="poor">悪い</option>
+            <option value="terrible">非常に悪い</option>
+        </select><br>
+
+        <label for="feedback">フィードバック:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+
+        <label for="future_events">今後のイベントへの関心:</label><br>
+        <input type="checkbox" id="future_events" name="future_events" value="yes">参加したい<br>
+
+        <label for="preferred_topics">関心のあるトピック:</label><br>
+        <input type="text" id="preferred_topics" name="preferred_topics"><br>
+
+        <label for="date">アンケート日付:</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>

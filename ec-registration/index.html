@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通販サイトの個人情報登録</title>
+</head>
+<body>
+    <h2>通販サイトの個人情報登録</h2>
+    <form>
+        <label for="name">氏名:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">メールアドレス:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">電話番号:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="address">住所:</label><br>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="dob">生年月日:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label for="password">パスワード:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="gender">性別:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">男性</option>
+            <option value="female">女性</option>
+            <option value="other">その他</option>
+        </select><br>
+
+        <label for="newsletter">ニュースレター購読:</label><br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">はい<br>
+
+        <input type="submit" value="登録">
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本の発注システム</title>
+</head>
+<body>
+    <h2>本の発注システム</h2>
+    <form>
+        <label for="customer_name">お名前:</label><br>
+        <input type="text" id="customer_name" name="customer_name"><br>
+
+        <label for="email">メールアドレス:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">電話番号:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="book_title">書籍タイトル:</label><br>
+        <input type="text" id="book_title" name="book_title"><br>
+
+        <label for="author">著者:</label><br>
+        <input type="text" id="author" name="author"><br>
+
+        <label for="isbn">ISBN:</label><br>
+        <input type="text" id="isbn" name="isbn"><br>
+
+        <label for="quantity">注文数:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1"><br>
+
+        <label for="shipping_address">配送先住所:</label><br>
+        <input type="text" id="shipping_address" name="shipping_address"><br>
+
+        <label for="payment_method">支払い方法:</label><br>
+        <select id="payment_method" name="payment_method">
+            <option value="credit_card">クレジットカード</option>
+            <option value="bank_transfer">銀行振込</option>
+            <option value="cash_on_delivery">代金引換</option>
+        </select><br>
+
+        <label for="order_date">注文日:</label><br>
+        <input type="date" id="order_date" name="order_date"><br>
+
+        <input type="submit" value="発注">
+    </form>
+</body>
+</html>
